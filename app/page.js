@@ -1,8 +1,17 @@
+import Leftcomponent from "@/components/Leftcomponent";
+import Rightcomponent from "@/components/Rightcomponent";
+
+
+export const rootUrl= "https://api.coingecko.com/api/v3/"
+
 
 export default function Home() {
   return (
     <div className="">
-      abc
+      <div className="flex flex-col">
+        <Leftcomponent/>
+        <Rightcomponent/>
+      </div>
     </div>
   );
 }
