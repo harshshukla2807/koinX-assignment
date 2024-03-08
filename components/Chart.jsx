@@ -27,30 +27,32 @@ const TradingViewWidget = () => {
         "calendar": false,
         "hide_volume": true,
         "support_host": "https://www.tradingview.com"
-
       }`;
     container.current.appendChild(script);
 
     return () => {
-      container.current.removeChild(script);
+      if (container.current) {
+        container.current.removeChild(script);
+      }
     };
   }, []);
 
   return (
-      <div className='w-auto h-[20rem] sm:h-[28rem]'>
-    <div className="tradingview-widget-container" ref={container}>
-      <div className="tradingview-widget-container__widget"></div>
-      <style jsx>{`
-        .tradingview-widget-container iframe {
-          border: none !important;
-        }
-      `}</style>
-    </div>
+    <div className='w-auto h-[20rem] sm:h-[28rem]'>
+      <div className="tradingview-widget-container" ref={container}>
+        <div className="tradingview-widget-container__widget"></div>
+        <style jsx>{`
+          .tradingview-widget-container iframe {
+            border: none !important;
+          }
+        `}</style>
+      </div>
     </div>
   );
 }
 
 export default TradingViewWidget;
+
 
 
 

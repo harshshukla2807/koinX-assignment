@@ -1,7 +1,12 @@
+import Getstarted from "./Getstarted"
+import Trending from "./Trending"
 
 const Rightcomponent = () => {
   return (
-    <div>Rightcomponent</div>
+    <div className="m-3"> 
+      <Getstarted/>
+      <Trending/>
+    </div>
   )
 }
 
