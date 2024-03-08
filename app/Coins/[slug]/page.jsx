@@ -13,7 +13,7 @@ import Rightcomponent from "@/components/Rightcomponent";
 // }
 
 const page = async({ params }) => {
-  console.log(params)
+  // console.log(params)
   
   // const data= await getdata()
     

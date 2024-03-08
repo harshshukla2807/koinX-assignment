@@ -16,7 +16,6 @@ const getdata = async () => {
 
   const res = await fetch(url, options);
   const data = await res.json();
-  console.log(data);
   return data;
 };
 
@@ -24,7 +23,7 @@ const Chartcontainer = async () => {
   const data = await getdata();
 
   return (
-    <div>
+    <div className="bg-white p-6 rounded-md">
       <div className="flex">
         <div className="flex gap-3 items-center">
           <span className="">

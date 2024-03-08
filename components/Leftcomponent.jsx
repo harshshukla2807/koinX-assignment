@@ -1,11 +1,13 @@
 import Chartcontainer from "./Chartcontainer"
+import Sectionbar from "./Sectionbar"
 
 
 const Leftcomponent = () => {
   return (
     <div>
-      <div className="bg-white p-6 rounded-md">
+      <div className="">
         <Chartcontainer/>
+        <Sectionbar/>
       </div>
     </div>
   )
