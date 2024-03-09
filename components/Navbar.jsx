@@ -23,7 +23,7 @@ const Navbar = () => {
     }, []); // Run this effect only once on component mount
 
     return (
-        <div className="flex justify-between h-16 items-center bg-white">
+        <div className="flex justify-between h-16 items-center bg-white w-full">
             <span className="ml-14">
                 <Image src="/logo.svg" width={110} height={110} alt="logo" />
             </span>

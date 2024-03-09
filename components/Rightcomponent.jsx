@@ -3,7 +3,7 @@ import Trending from "./Trending"
 
 const Rightcomponent = () => {
   return (
-    <div className="m-3"> 
+    <div className="m-3 "> 
       <Getstarted/>
       <Trending/>
     </div>
