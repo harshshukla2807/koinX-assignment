@@ -1,4 +1,5 @@
 // import { rootUrl } from "@/app/page";
+import Footer from "@/components/Footer";
 import Leftcomponent from "@/components/Leftcomponent";
 import Rightcomponent from "@/components/Rightcomponent";
 
@@ -23,9 +24,10 @@ const page = async({ params }) => {
         Cryptocurrencies &gt;&gt; <strong>{params.slug}</strong>
       </p>
       <div className="flex-col justify-center items-center m-4">
-        <Leftcomponent/>
+        <Leftcomponent params={params}/>
         <Rightcomponent/>
       </div>
+      <Footer/>
     </div>
   );
 };

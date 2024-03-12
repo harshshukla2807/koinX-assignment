@@ -1,5 +1,5 @@
 import React from "react";
-import { rootUrl } from "@/app/page";
+import { rootUrl } from "@/app/utils/rooturl";
 import { format } from "date-fns";
 
 const getdata = async () => {
@@ -28,7 +28,7 @@ const Performance = async () => {
   // console.log(data)
 
   return (
-    <div className="bg-white rounded-md p-3">
+    <div id="Overview" className="bg-white rounded-md p-3">
       <div>
         {/* performance div */}
         <h1 className="text-xl sm:text-3xl font-semibold mb-10">Performance</h1>
@@ -86,7 +86,7 @@ const Performance = async () => {
 
       {data.map((item) => {
         return (
-          <div key={item.id} className="text-[12px] lg:text-base font-medium">
+          <div id="Fundamentals" key={item.id} className="text-[12px] lg:text-base font-medium">
             {/* Fundamentals div */}
             <div className="mt-10">
               <div className="flex gap-2 items-center">
@@ -168,7 +168,7 @@ const Performance = async () => {
                       <h2 className="text-gray-400">All-Time High</h2>
                       <div>
                         <div className="flex flex-col items-end">
-                          <p>${item.ath}  <span className="text-red-500">-75.6%</span></p>
+                          <div>${item.ath}  <span className="text-red-500">-75.6%</span></div>
                         <p className="text-xs">
                           {format(new Date(item.ath_date), "MMM d, yyyy")}{" "}
                           (about 1 year)
@@ -183,7 +183,7 @@ const Performance = async () => {
                       <h2 className="text-gray-400">All-Time Low</h2>
                       <div>
                         <div className="flex flex-col items-end">
-                          <p>${item.atl} <span className="text-green-500">24729.1%</span></p>
+                          <div>${item.atl} <span className="text-green-500">24729.1%</span></div>
                         <p className="text-xs">
                           {format(new Date(item.atl_date), "MMM d, yyyy")}{" "}
                           (about 9 year)

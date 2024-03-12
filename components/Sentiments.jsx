@@ -3,7 +3,7 @@ import React from 'react'
 
 const Sentiments = () => {
   return (
-    <div className='bg-white rounded-md p-3 mt-5'>
+    <div id='Sentiments' className='bg-white rounded-md p-3 mt-5'>
         <h1 className='text-xl sm:text-3xl font-semibold mb-4'>Sentiments</h1>
         <div className='flex-col gap-4'>
             <div className='flex gap-2'>
@@ -11,21 +11,21 @@ const Sentiments = () => {
                 <img src="/!.svg" alt="" className="" />
             </div>
             
-            <div className='flex overflow-x-scroll mt-3'>
+            <div style={{ WebkitScrollbar: 'display: none', scrollbarWidth: 'none' }} className='flex overflow-x-scroll mt-3'>
                 <div className='flex gap-2'>
                     <div className='flex bg-[#E8F4FD] rounded-md w-[15rem] h-[7rem] items-start p-4 gap-2'>
                         <Image src="/sentiment1.svg" height={36} width={36} alt='sentiment 1st div image'/>
-                        <p className='text-[8px] flex flex-col gap-2'>
+                        <div className='text-[8px] flex flex-col gap-2'>
                             <h3 className='text-[10px] font-semibold'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, sed. Eos accusamus fugiat molestiae iusto cumque tempora facere debitis provident?</p>
-                        </p>
+                        </div>
                     </div>
                     <div className='flex bg-[#EBF9F4] rounded-md w-[15rem] h-[7rem] items-start p-4 gap-2'>
                         <Image src="/sentiment2.svg" height={36} width={36} alt='sentiment 2nd div image'/>
-                        <p className='text-[8px] flex flex-col gap-2'>
+                        <div className='text-[8px] flex flex-col gap-2'>
                             <h3 className='text-[10px] font-semibold'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam eveniet accusantium, sapiente cum incidunt modi distinctio? Magni tempore amet omnis.</p>
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>

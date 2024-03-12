@@ -1,17 +1,31 @@
-import Leftcomponent from "@/components/Leftcomponent";
-import Rightcomponent from "@/components/Rightcomponent";
+import Selectcoins from "@/components/Selectcoins";
+import { rootUrl } from "./utils/rooturl";
 
 
-export const rootUrl= "https://api.coingecko.com/api/v3/"
+export const getdata = async () => {
+  // console.log(params.slug)
+  const queryParams = new URLSearchParams({
+    vs_currency: "usd",
+  });
 
+  const url = `${rootUrl}/coins/markets?${queryParams}`;
+  const options = { method: "GET" };
 
-export default function Home() {
+  const res = await fetch(url, options);
+  const data = await res.json();
+  return data;
+};
+
+const Home = async()=> {
+  
+  const data= await getdata()
+  // console.log(data)
+  
   return (
-    <div className="">
-      <div className="flex flex-col xl:flex-row">
-        <Leftcomponent/>
-        <Rightcomponent/>
-      </div>
+    <div className="flex justify-center">
+      <Selectcoins data={data}/>
     </div>
   );
 }
+
+export default Home

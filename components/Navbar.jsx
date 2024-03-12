@@ -25,7 +25,7 @@ const Navbar = () => {
     return (
         <div className="flex justify-between h-16 items-center bg-white w-full">
             <span className="ml-14">
-                <Image src="/logo.svg" width={110} height={110} alt="logo" />
+                <Link href="/"><Image src="/logo.svg" width={110} height={110} alt="logo" /></Link>
             </span>
             <ul className={`items-center font-semibold sm:gap-5 sm:text-xs sm:flex sm:mr-6 sm:visible md:gap-5 md:mr-10 md:text-sm lg:mr-20 lg:gap-10 ${active ? 'flex flex-col absolute top-16 right-0 bg-white justify-evenly w-[45%] h-[40%] p-4 text-[10px] gap-5 font-normal sm:hidden' : 'sm:flex hidden'}`}>
                 <li>

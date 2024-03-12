@@ -19,7 +19,7 @@ const About = () => {
         <h3 className="text-[12px] font-semibold">
           Lorem ipsum dolor sit amet.
         </h3>
-        <p className="text-[10px] gap-2 flex flex-col">
+        <div className="text-[10px] gap-2 flex flex-col">
           <div>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
             aut, non aliquam laudantium reprehenderit, beatae perspiciatis nemo
@@ -50,7 +50,7 @@ const About = () => {
             culpa distinctio incidunt assumenda itaque numquam voluptatum,
             temporibus nostrum officiis iure vero, dolores
           </div>
-        </p>
+        </div>
       </div>
       <div className="flex flex-col gap-2">
         <h3 className="text-[12px] font-semibold">Already Holding Crypto?</h3>

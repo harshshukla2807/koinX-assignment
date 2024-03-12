@@ -3,7 +3,8 @@ import React from 'react'
 
 const Team = () => {
   return (
-    <div className='bg-white rounded-md p-3 mt-5 flex flex-col gap-6 '>
+    <div id='Team' className='bg-white rounded-md p-3 mt-5 flex flex-col gap-6 '>
+        <h1 className='text-2xl font-medium'>Team</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae repellat tempore magnam ducimus blanditiis quibusdam voluptates porro quisquam deleniti? Dolores.</p>
         <div className='flex flex-col sm:flex-row bg-[#E8F4FD] gap-6 pl-4 pr-4 pt-2 pb-2 rounded-lg items-center'>
             <div className='flex flex-col gap-1 justify-center items-center'>

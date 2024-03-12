@@ -1,4 +1,4 @@
-import { rootUrl } from '@/app/page';
+import { rootUrl } from "@/app/utils/rooturl";
 import Image from 'next/image';
 import React from 'react'
 
@@ -22,8 +22,8 @@ export const getdata = async () => {
   return (
     <div className=' bg-white rounded-md p-3 mt-5 h-fit max-w-[420px]'>
         <h1 className='font-semibold text-2xl'>Trending Coins (24h)</h1>
-        {data.map((singleItem)=>{
-            return <div>
+        {data.map((singleItem,index)=>{
+            return <div key={index}>
             <div className='flex mt-3 justify-between items-center'>
                 <div className='flex items-center '>
                     <Image className='rounded-xl' src={singleItem.item.thumb} height={30} width={30} alt='img'/>

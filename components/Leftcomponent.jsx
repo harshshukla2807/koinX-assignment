@@ -7,10 +7,10 @@ import Team from "./Team"
 import Tokenomics from "./Tokenomics"
 
 
-const Leftcomponent = () => {
+const Leftcomponent = ({params}) => {
   return (
       <div className="m-3">
-        <Chartcontainer/>
+        <Chartcontainer params={params}/>
         <Sectionbar/>
         <Performance/>
         <Sentiments/>
