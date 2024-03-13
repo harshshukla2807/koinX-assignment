@@ -31,8 +31,9 @@ const TradingViewWidget = () => {
     container.current.appendChild(script);
 
     return () => {
-      if (container.current) {
-        container.current.removeChild(script);
+      const currentContainer = container.current; // Store the current value of the ref
+      if (currentContainer) {
+        currentContainer.removeChild(script); // Use the variable in cleanup
       }
     };
   }, []);
@@ -52,7 +53,3 @@ const TradingViewWidget = () => {
 }
 
 export default TradingViewWidget;
-
-
-
-
