@@ -65,7 +65,7 @@ const Chartcontainer = async ({params}) => {
         </div>
         
         <hr className="mb-8 mt-8" />
-
+      
         <div>
             <h2 className="font-semibold">{data.name} Price Chart (USD)</h2>
             {/* fetch chart */}

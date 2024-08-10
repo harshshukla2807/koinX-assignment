@@ -16,7 +16,7 @@ const Selectcoins = ({ data }) => {
         <label className="mr-10" htmlFor="blogCategory">Coins:</label>
         <select className="" name="coins" id="coins" onChange={handleChange}>
           <option className="flex justify-center items-center" value="" hidden>
-            <div>Select Coins</div>
+            <div>Select Coin</div>
           </option>
           {data.map((data, index) => {
             return (
