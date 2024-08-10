@@ -29,7 +29,9 @@ const Chartcontainer = async ({params}) => {
       <div className="flex">
         <div className="flex gap-3 items-center">
           <span className="">
+        {console.log(data.image)}
             <Image
+              loader={()=>data.image}
               src={data.image}
               width={32}
               height={32}
